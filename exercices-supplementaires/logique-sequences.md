@@ -51,7 +51,6 @@ L'illustration ci-dessous représente les différentes lignes de tables possible
 
 ![Table](https://github.com/CamilleSimon/algorithmique/blob/main/exercices-supplementaires/tables.png)
 
-Ecrire un algorithme qui demande à l'utilisateur un nombre d'invités et qui retourne la forme et le nombre de tables nécessaire pour faire assoire les invités.
-Attention, les seuls agencement de tables valides sont ceux où il ne reste pas de place vide, tous les côté sont occupés.
+Ecrire un algorithme qui demande à l'utilisateur un nombre d'invités et qui retourne la forme et le nombre de tables nécessaire pour faire assoire les invités.**Attention, les seuls agencement de tables valides sont ceux où il ne reste pas de place vide, tous les côté sont occupés.**
 
 Notes : les forme des tables sont de haut en bas : carrée, pentagone, héxagone, heptagone, octogone. 
