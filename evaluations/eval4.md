@@ -18,7 +18,7 @@ Remplacer la ligne qui contient `//` pour que l'algorithme retourne une valeur d
         Ecrire("Un nombre aléatoire entre ", debut, " et ", fin, " : ", valeur)
 ```
 
-## exercice de logique
+## Exercice de logique
 
 # Enoncé
 
