@@ -1,13 +1,14 @@
 ```
 Sous-algorithme MoyenneEtSomme
 Paramètres d’entrée :
-	tab[] : tableau d'e réels
+	tab[] : tableau de réels
 Paramètres de sortie :
 	moyenne : réel
-	somme : entier
+	somme : réel
 Variables : // Cette ligne est optionnelle car il n’y a pas d’autres variables dans cette exemple
 Instructions :
 	somme ← 0
+    moyenne ← 0
 	Pour i de 0 à Longueur(tab) – 1 faire
 		moyenne ← moyenne + tab[i]
 		somme ← somme + tab[i]
