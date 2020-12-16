@@ -43,3 +43,4 @@ Cours et exercices à destination des étudiants du [Bachelor Métiers du numér
         * [Correction exercice 31](https://github.com/CamilleSimon/algorithmique/blob/main/exercices-seance2/boucles/exercice31.md)
 * [Séance 3 - Algorithmes simples](https://github.com/CamilleSimon/algorithmique/blob/main/cours/Algorithmique-Seance3.pdf)
 * [Séance 4 - Les sctructures de données](https://github.com/CamilleSimon/algorithmique/blob/main/cours/Algorithmique-Seance4.pdf)
+* [Séance 5 - Sous-algorithme et fonction](https://github.com/CamilleSimon/algorithmique/blob/main/cours/Algorithmique-Seance5.pdf)
