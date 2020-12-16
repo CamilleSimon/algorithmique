@@ -3,11 +3,13 @@
 ## Enoncé 
 
 Ecrire une fonction qui prend en entrée une chaîne de caractère et retourne cette chaîne avec un décalage à gauche. 
+
 Trouver deux solutions à cet exercice.
 
 ## Exemple
 
 Phrase donnée au sous-algorithme : “Aujourd’hui il ne fait pas beau”
+
 Retour du sous-algorithme : “ujourd’hui il ne fait pas beauA”
 
 ```
