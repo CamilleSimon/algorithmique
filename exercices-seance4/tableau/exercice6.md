@@ -52,3 +52,75 @@ Instructions
 
     Ecrire("La suite la plus longue de -1 est de longueur ", moinsUn, ", la plus longue suite de 0 est de longueur ", zero, " et la plus longue suite de 1 est de longueur ", un)
 ```
+
+Version alternative :
+
+```
+Variables :
+    series[50] : Tableau d'entiers
+    results[8] : Tableau d'entiers
+    
+Instructions :
+    // Initialisation du Tableau des series
+    Pour i de 0 à 49 faire
+    
+        series[i] ← AléatoireEntier(3) - 1
+    
+    FinPour
+    
+    // Initialisation du Tableau des résultats
+    
+    results[0] ← (1)
+    results[1] ← 0
+    results[2] ← (0)
+    results[3] ← 0
+    results[4] ← (-1)
+    results[5] ← 0
+    results[6] ← (2)
+    results[7] ← 0
+    
+    // Boucle de tests
+    
+    Pour i de 0 à 49 faire
+        
+        Si ( series[i] != results[6] ) alors
+            
+            // Attribuation des résultats de suites
+            
+            Si ( (results[6] = 1) ET (results[7] > results[1]) ) alors
+            
+                results[1] ← results[7]
+                
+            FinSi
+            
+            Si ( (results[6] = 0) ET (results[7] > results[3]) ) alors
+            
+                results[3] ← results[7]
+                
+            FinSi
+            
+            Si ( (results[6] = -1) ET (results[7] > results[5]) ) alors
+            
+                results[5] ← results[7]
+                
+            FinSi
+            
+            // Remise à niveau de la serie
+            
+            results[6] ← series[i]
+            results[7] ← 1
+        
+        Sinon
+        
+            // Ajouts des résultats de suites
+            
+            results[7] ← results[7] + 1
+        
+        FinSi
+        
+    FinPour
+    
+    Ecrire("Pour", results[0], " : ", results[1])
+    Ecrire("Pour", results[2], " : ", results[3])
+    Ecrire("Pour", results[4], " : ", results[5])
+```
