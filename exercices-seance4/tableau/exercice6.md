@@ -24,7 +24,7 @@ Variables
 Instructions
 
     // Remplissage du tableau
-    Pour i de 0 à 50 faire
+    Pour i de 0 à 49 faire
         tab[i] ← AleatoireEntier(3) - 1
     FinPour
         
@@ -46,7 +46,7 @@ Instructions
                 Cas tab[i - 1] = 1 faire
                     un ← compteur
             FinSelon
-            compteur ← 0
+            compteur ← 1
         FinSi
     FinPour
 
