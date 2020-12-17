@@ -217,9 +217,21 @@ Ecrire un sous-algorithme qui à pour paramètre d'entrée une image et qui reto
   <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice2q2.jpg">
 </p>
 
-#### Question 3 - Niveau de gris
+### 3.5. Niveaux de gris et noir/blanc
 
-Pour obtenir le niveau de gris d'un pixel coloré, on fait la moyenne de ces composantes. Ce niveau de gris est ensuite affecté à l'ensemble des composantes du pixel.
+Pour obtenir le niveau de gris d'un pixel coloré, on fait la moyenne de ses composantes. Ce niveau de gris est ensuite affecté à l'ensemble des composantes du pixel.
+
+<p align="center">
+  <img width="1000" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/processus-niveau-gris.jpg">
+</p>
+
+<p align="center">
+  <img width="1000" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/conversion-niveaux-gris.jpg">
+</p>
+
+### 3.6 Exercice 3
+
+#### Question 1 - Niveau de gris
 
 Ecrire un sous-algorithme qui à pour paramètre d'entrée une image et qui retourne une nouvelle version en niveaux de gris.
 
@@ -227,10 +239,29 @@ Ecrire un sous-algorithme qui à pour paramètre d'entrée une image et qui reto
   <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice2q3.jpg">
 </p>
 
-#### Question 4
+#### Question 2 - Noir et blanc
 
 Ecrire un sous-algorithme qui à pour paramètres d'entrée une image en niveau de gris et un réel. Ce sous-algorithme retourne une nouvelle version de l'image en noir et blanc où tous les pixels plus petit que le seuil sont coloriés en noir et tous les pixels plus grand que le seuil sont colorés en blanc.
 
 <p align="center">
   <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice2q4.jpg">
 </p>
+
+### 3.7 modification de contours
+
+On entre dans la partie la plus difficile de ce devoir maison. Pour effectuer les traitements suivants, il est nécessaire de travailler à partir d'une image en niveux de gris.
+
+La modification de contour se fait en augmentant le contraste d'un pixel par rapport à ces voisins. Le "poid" des voisins dans le nouveau calcul de la couleur du pixel est donné par un tableau à deux dimensions. Voici un exemple :
+
+<p align="center">
+  <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/calcul-contraste.jpg">
+</p>
+
+On veut calculer la nouvelle couleur du pixel entouré en rouge. Les voisins de ce pixel sont entouré en vert.
+La nouvelle couleur du pixel central est la somme de chaque voisin multiplié par la matrice de convolution de même coordonnées. La matrice de convolution est un tableau de 3 par 3 qui, en fonction des valeurs qu'il contient, va permettre de faire apparaitre ou flouter les contours des objets présents dans l'image. Pour l'exemple ci-dessus, on multiplie les nombres de même couleurs puis on les ajoute ensemble, ce qui donne : `1 * 170 (jaune) + 1 * 170 (orange) + 1 * 119 (rouge) + 1 * 170 (violet) + 0 * 170 (bleu) + 1 * 119 (cyan) + 1 * 119 (vert) + 1 * 119 (fushia) + 1 * 119 (blanc)`.
+
+Si cette nouvelle valeur est supérieure à `255` alors la nouvelle couleur du pixel est `255`, de même si la valeur est inférieure à `0` alors la nouvelle couleur du pixel est `0`. Il ne faudra pas oublier d'affecter cette valeur à tous les canaux.
+
+### 3.8 Exercice 4
+
+Ecrire un sous-algorithme qui à pour paramètres d'entrée une image et une matrice de convolution et qui retourne la nouvelle d'image après application de la matrice. Vous veillerez à effectuer toutes les verifications necessaires et traiterez les exceptions comme vous le souhaitez.
