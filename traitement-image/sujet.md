@@ -7,11 +7,13 @@ Le but de cette section du cours va être d'apprendre à manipuler les tableaux 
 <p align="center">
   <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/original.jpg">
 </p>
+
 <p style="text-align: center;">Version originale</p>
 
 <p align="center">
   <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/rouge.jpg">
 </p>
+
 <p style="text-align: center;">Filtre rouge</p>
 
 <p align="center">
