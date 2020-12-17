@@ -6,6 +6,35 @@ Le but de cette section du cours va être d'apprendre à manipuler les tableaux 
 
 <p align="center">
   <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/original.jpg">
-  
-  Version originale
 </p>
+<p style="text-align: center;">Version originale</p>
+
+<p align="center">
+  <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/rouge.jpg">
+</p>
+<p style="text-align: center;">Filtre rouge</p>
+
+<p align="center">
+  <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/vert.jpg">
+</p>
+<p style="text-align: center;">Filtre vert</p>
+
+<p align="center">
+  <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/bleu.jpg">
+</p>
+<p style="text-align: center;">Filtre bleu</p>
+
+<p align="center">
+  <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/niveaux-gris.jpg">
+</p>
+<p style="text-align: center;">Filtre niveaux de gris</p>
+
+<p align="center">
+  <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/noir-blanc.jpg">
+</p>
+<p style="text-align: center;">Filtre noir et blanc</p>
+
+<p align="center">
+  <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/symetrie.jpg">
+</p>
+<p style="text-align: center;">Symétrie axiale verticale</p>
