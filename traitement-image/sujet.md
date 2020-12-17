@@ -90,6 +90,7 @@ Le contenu de la case de coordonnée (`6`,`0`) est changé à `0`.
 Généralisons l'accès d'une case à l'ensemble du tableau. L'exemple d'algorithme ci-dessous rempli la grille de case noire.
 
 ```
+Algorithme Colorier en noir
 Variable
     grille[10][5] : grille d'entiers
 Instructions
@@ -101,6 +102,13 @@ Instructions
 ```
 
 Il faut utiliser deux boucles : une pour se déplacer sur l'axe horizontal et une autre pour se séplacer sur l'axe vertical. La boucle avec l'itérateur `i` parcours les colonnes de la grille et la boucle avec l'itérateur `j` parcours les lignes de la grille.
+
+Lorque l'on dispose d'une grille dont on ignore les dimensions, on peut les récupérer à l'aide de la fonction `Longueur`. En utilisant directement la variable en paramètre, on obtient la taille de la première dimension, soit le nombre de colonne. En utilisant la variable suivie d'un index de colonne valide, on obtient la taille de la deuxième dimension soit le nombre de ligne de cette colonne. Exemple :
+
+```
+colonnes ← Longueur(grille)
+lignes ← Longueur(grille[0])
+```
 
 ### 2.4. Exercice 1
 
@@ -115,16 +123,42 @@ Voici une représentation de Mr Monopoly :
 * Quelle est la couleur de la case de coordonnées (`8`,`13`) ?
 * Quelle est la couleur de la case de coordonnées (`13`,`8`) ?
 
+(Vous pouvez agrandir l'image en faisant clic droit -> Afficher l'image)
+
 #### Question 2
 
-Ecrire un sous-algorithme qui prend en entrée une grille et affiche combien il y a de cases noires et de cases blanches dans cette grille.
+Ecrire un sous-algorithme nommé `nombreCasesCouleur` qui prend en entrée une grille et affiche combien il y a de cases noires et de cases blanches dans cette grille.
 
 #### Question 3
 
-Ecrire un sous-algorithme qui prend en entrée une grille et retourne une grille dont les couleurs ont été inversées. C'est-à-dire que les cases noires sont coloriées en blancs et les cases blanches sont coloriées en noir.
+Ecrire un sous-algorithme intitulé `inverse` qui prend en entrée une grille et retourne une grille dont les couleurs ont été inversées. C'est-à-dire que les cases noires sont coloriées en blancs et les cases blanches sont coloriées en noir.
 
 ## 3. Structure d'une image
 
-Une image est une grille de pixel. Chaque pixel est un tableau de taille trois où chaque case contient un entier entre 0 et 255 correspondant respectivement au rouge, vert et bleu.
+Une image est un tableau à trois dimensions. Comme pour la section ci-dessus, les deux premières dimensions représentent les colonnes et les lignes de la grille. Une case de cette grille est appelé `pixel` et est un tableau de taille trois où chaque case contient un entier entre 0 et 255 correspondant respectivement au rouge, vert et bleu.
 
+<p align="center">
+  <img width="600" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/grille3D.png">
+</p>
+
+En combinant les valeurs de rouge, vert et bleu de chaque pixel, on obtient la couleur affiché à l'écran.
+
+### 3.1. Déclaration d'une image
+
+Comme pour les autres types de tableaux, on peut déclarer les images de deux façons :
+
+```
+picture[10][5][3]
+```
+
+```
+picture[][][]
+```
+
+Dans le deuxième cas, la déclaration de la taille des tableaux dans les instructions se fait ainsi :
+```
+picture[][][] ← picture[10][5][3]
+```
+
+### 3.2. Accès aux informations de l'image
 
