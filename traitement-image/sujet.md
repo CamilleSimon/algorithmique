@@ -286,6 +286,8 @@ Si cette nouvelle valeur est supérieure à `255` alors la nouvelle couleur du p
 
 Le but de ce traitement est de diviser une image en carré de `n` pixels de côté. On effectue ensuite la moyenne de chacun des canaux des `n²` pixels pour obtenir l'image pixellisée.
 
+Ici, la seul pixellisation possible est avec des carrés de 5 cases.
+
 <p align="center">
   <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/pixellisation.png">
 </p>
