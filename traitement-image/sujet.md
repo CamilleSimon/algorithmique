@@ -214,7 +214,7 @@ Ecrire un sous-algorithme qui à pour paramètre d'entrée une image et qui reto
 **Exemple**
 
 <p align="center">
-  <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice2q2.jpg">
+  <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice2q2.jpg">
 </p>
 
 ### 3.5 Niveaux de gris et version noir/blanc
