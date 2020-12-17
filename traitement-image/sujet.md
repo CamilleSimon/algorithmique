@@ -138,7 +138,7 @@ Ecrire un sous-algorithme intitulé `inverse` qui prend en entrée une grille et
 Une image est un tableau à trois dimensions. Comme pour la section ci-dessus, les deux premières dimensions représentent les colonnes et les lignes de la grille. Une case de cette grille est appelé `pixel` et est un tableau de taille trois où chaque case contient un entier entre 0 et 255 correspondant respectivement au rouge, vert et bleu.
 
 <p align="center">
-  <img width="600" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/grille3D.png">
+  <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/grille3D.png">
 </p>
 
 En combinant les valeurs de rouge, vert et bleu de chaque pixel, on obtient la couleur affiché à l'écran.
@@ -172,7 +172,7 @@ L'accès à un pixel de la grille ce fait en utilisant `image[x][y]` où `x` cor
 Pour accéder à la composante rouge du pixel, il est necessire d'utiliser la troisième dimension : `image[x][y][0]` où `0` permet l'accès à la première couche du canal. L'accès à la composante verte se fait avec `image[x][y][1]` et l'accès à la composante bleue avec `image[x][y][2]`.
 
 <p align="center">
-  <img width="450" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/grille3Dpixels.png">
+  <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/grille3Dpixels.png">
 </p>
 
 ### 3.3 Filtre de couleur
@@ -203,11 +203,11 @@ Instructions
 
 ### 3.4 Exercice 2
 
-#### Question 1
+#### Question 1 - Filtre bleu et vert
 
 En utilisant le modèle ci-dessus, réaliser un sous-algorithme qui filtre le bleu et un sous-algorithme qui filtre le vert.
 
-#### Question 2
+#### Question 2 - Symétrique
 
 Ecrire un sous-algorithme qui à pour paramètre d'entrée une image et qui retourne le symétrique vertical de cette image.
 
@@ -217,6 +217,20 @@ Ecrire un sous-algorithme qui à pour paramètre d'entrée une image et qui reto
   <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice2q2.jpg">
 </p>
 
-### 3.5 Niveaux de gris et version noir/blanc
+#### Question 3 - Niveau de gris
 
-Il existe différentes filtres qui permet d'obtenir 
+Pour obtenir le niveau de gris d'un pixel coloré, on fait la moyenne de ces composantes. Ce niveau de gris est ensuite affecté à l'ensemble des composantes du pixel.
+
+Ecrire un sous-algorithme qui à pour paramètre d'entrée une image et qui retourne une nouvelle version en niveaux de gris.
+
+<p align="center">
+  <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice2q3.jpg">
+</p>
+
+#### Question 4
+
+Ecrire un sous-algorithme qui à pour paramètres d'entrée une image en niveau de gris et un réel. Ce sous-algorithme retourne une nouvelle version de l'image en noir et blanc où tous les pixels plus petit que le seuil sont coloriés en noir et tous les pixels plus grand que le seuil sont colorés en blanc.
+
+<p align="center">
+  <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice2q4.jpg">
+</p>
