@@ -168,3 +168,6 @@ L'accès à un pixel de la grille ce fait en utilisant `image[x][y]` où `x` cor
 <p align="center">
   <img width="450" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/pixel0-0.png">
 </p>
+
+Pour accéder à la composante rouge du pixel, il est necessire d'utiliser la troisième dimension : `image[x][y][0]` où `0` permet l'accès à la première couche du canal. L'accès à la composante verte se fait avec `image[x][y][1]` et l'accès à la composante bleue avec `image[x][y][2]`.
+
