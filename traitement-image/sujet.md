@@ -207,6 +207,12 @@ Instructions
 
 En utilisant le modèle ci-dessus, réaliser un sous-algorithme qui filtre le bleu et un sous-algorithme qui filtre le vert.
 
+**Exemple**
+
+<p align="center">
+  <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice2q1.jpg">
+</p>
+
 #### Question 2 - Symétrique
 
 Ecrire un sous-algorithme qui à pour paramètre d'entrée une image et qui retourne le symétrique vertical de cette image.
@@ -233,7 +239,9 @@ Pour obtenir le niveau de gris d'un pixel coloré, on fait la moyenne de ses com
 
 #### Question 1 - Niveau de gris
 
-Ecrire un sous-algorithme qui à pour paramètre d'entrée une image et qui retourne une nouvelle version en niveaux de gris.
+Écrire un sous-algorithme qui a pour paramètre d'entrée une image et qui retourne une nouvelle version en niveaux de gris.
+
+**Exemple**
 
 <p align="center">
   <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice2q3.jpg">
@@ -241,27 +249,53 @@ Ecrire un sous-algorithme qui à pour paramètre d'entrée une image et qui reto
 
 #### Question 2 - Noir et blanc
 
-Ecrire un sous-algorithme qui à pour paramètres d'entrée une image en niveau de gris et un réel. Ce sous-algorithme retourne une nouvelle version de l'image en noir et blanc où tous les pixels plus petit que le seuil sont coloriés en noir et tous les pixels plus grand que le seuil sont colorés en blanc.
+Écrire un sous-algorithme qui a pour paramètres d'entrée une image en niveau de gris et un réel. Ce sous-algorithme retourne une nouvelle version de l'image en noir et blanc où tous les pixels plus petit que le seuil sont coloriés en noir et tous les pixels plus grand que le seuil sont colorés en blanc.
+
+**Exemple**
 
 <p align="center">
   <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice2q4.jpg">
 </p>
 
-### 3.7 modification de contours
+### 3.7 Modification de contours
 
-On entre dans la partie la plus difficile de ce devoir maison. Pour effectuer les traitements suivants, il est nécessaire de travailler à partir d'une image en niveux de gris.
+On entre dans la partie la plus difficile de ce devoir maison. Pour effectuer les traitements suivants, il est nécessaire de travailler à partir d'une image en niveaux de gris.
 
-La modification de contour se fait en augmentant le contraste d'un pixel par rapport à ces voisins. Le "poid" des voisins dans le nouveau calcul de la couleur du pixel est donné par un tableau à deux dimensions. Voici un exemple :
+La modification de contour se fait en augmentant ou en diminuant le contraste d'un pixel par rapport à ces voisins. Le "poids" des voisins dans le nouveau calcul de la couleur du pixel est donné par un tableau à deux dimensions appelé matrice de convolution. Voici un exemple :
 
 <p align="center">
   <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/calcul-contraste.png">
 </p>
 
-On veut calculer la nouvelle couleur du pixel entouré en rouge. Les voisins de ce pixel sont entouré en vert.
-La nouvelle couleur du pixel central est la somme de chaque voisin multiplié par la matrice de convolution de même coordonnées. La matrice de convolution est un tableau de 3 par 3 qui, en fonction des valeurs qu'il contient, va permettre de faire apparaitre ou flouter les contours des objets présents dans l'image. Pour l'exemple ci-dessus, on multiplie les nombres de même couleurs puis on les ajoute ensemble, ce qui donne : `1 * 170 (jaune) + 1 * 170 (orange) + 1 * 119 (rouge) + 1 * 170 (violet) + 0 * 170 (bleu) + 1 * 119 (cyan) + 1 * 119 (vert) + 1 * 119 (fushia) + 1 * 119 (blanc)`.
+On veut calculer la nouvelle couleur du pixel entouré en rouge. Les voisins de ce pixel sont entourés en vert.
+La nouvelle couleur du pixel central est la somme de chaque voisin multiplié par la matrice de convolution. La matrice de convolution est un tableau de trois par trois qui, en fonction des valeurs qu'elle contient, va permettre de faire apparaitre ou flouter les contours des objets présents dans l'image. Pour l'exemple ci-dessus, on multiplie les nombres de même couleurs puis on les ajoute ensemble, ce qui donne : `1 * 170 (jaune) + 1 * 170 (orange) + 1 * 119 (rouge) + 1 * 170 (violet) + 0 * 170 (bleu) + 1 * 119 (cyan) + 1 * 119 (vert) + 1 * 119 (fushia) + 1 * 119 (blanc)`.
 
 Si cette nouvelle valeur est supérieure à `255` alors la nouvelle couleur du pixel est `255`, de même si la valeur est inférieure à `0` alors la nouvelle couleur du pixel est `0`. Il ne faudra pas oublier d'affecter cette valeur à tous les canaux.
 
 ### 3.8 Exercice 4
 
-Ecrire un sous-algorithme qui à pour paramètres d'entrée une image et une matrice de convolution et qui retourne la nouvelle d'image après application de la matrice. Vous veillerez à effectuer toutes les verifications necessaires et traiterez les exceptions comme vous le souhaitez.
+Écrire un sous-algorithme qui a pour paramètres d'entrée une image ainsi qu'une matrice de convolution et qui retourne la nouvelle d'image après application de la matrice. Vous veillerez à effectuer toutes les vérifications nécessaires et traiterez les exceptions comme vous le souhaitez.
+
+**Exemple**
+
+<p align="center">
+  <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice4.jpg">
+</p>
+
+### 3.9 Pixellisation d'une image
+
+Le but de ce traitement est de diviser une image en carré de `n` pixels de côté. On effectue ensuite la moyenne de chacun des canaux des `n²` pixels pour obtenir l'image pixellisée.
+
+<p align="center">
+  <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/pixellisation.png">
+</p>
+
+### 3.10 Exercice 5
+
+Écrire un sous-algorithme qui a pour paramètres d'entrée une image et qui retourne l'ensemble des pixellisations possibles. Vous veillerez à effectuer toutes les vérifications nécessaires et traiterez les exceptions comme vous le souhaitez.
+
+**Exemple**
+
+<p align="center">
+  <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice5.jpg">
+</p>
