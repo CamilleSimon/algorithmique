@@ -222,11 +222,11 @@ Ecrire un sous-algorithme qui à pour paramètre d'entrée une image et qui reto
 Pour obtenir le niveau de gris d'un pixel coloré, on fait la moyenne de ses composantes. Ce niveau de gris est ensuite affecté à l'ensemble des composantes du pixel.
 
 <p align="center">
-  <img width="1000" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/processus-niveau-gris.jpg">
+  <img width="1000" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/processus-niveau-gris.png">
 </p>
 
 <p align="center">
-  <img width="1000" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/conversion-niveaux-gris.jpg">
+  <img width="1000" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/conversion-niveaux-gris.png">
 </p>
 
 ### 3.6 Exercice 3
@@ -254,7 +254,7 @@ On entre dans la partie la plus difficile de ce devoir maison. Pour effectuer le
 La modification de contour se fait en augmentant le contraste d'un pixel par rapport à ces voisins. Le "poid" des voisins dans le nouveau calcul de la couleur du pixel est donné par un tableau à deux dimensions. Voici un exemple :
 
 <p align="center">
-  <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/calcul-contraste.jpg">
+  <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/calcul-contraste.png">
 </p>
 
 On veut calculer la nouvelle couleur du pixel entouré en rouge. Les voisins de ce pixel sont entouré en vert.
