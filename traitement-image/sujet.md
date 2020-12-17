@@ -268,7 +268,7 @@ La modification de contour se fait en augmentant ou en diminuant le contraste d'
 </p>
 
 On veut calculer la nouvelle couleur du pixel entouré en rouge. Les voisins de ce pixel sont entourés en vert.
-La nouvelle couleur du pixel central est la somme de chaque voisin multiplié par la matrice de convolution. La matrice de convolution est un tableau de trois par trois qui, en fonction des valeurs qu'elle contient, va permettre de faire apparaitre ou flouter les contours des objets présents dans l'image. Pour l'exemple ci-dessus, on multiplie les nombres de même couleurs puis on les ajoute ensemble, ce qui donne : `1 * 170 (jaune) + 1 * 170 (orange) + 1 * 119 (rouge) + 1 * 170 (violet) + 0 * 170 (bleu) + 1 * 119 (cyan) + 1 * 119 (vert) + 1 * 119 (fushia) + 1 * 119 (blanc)`.
+La nouvelle couleur du pixel central est la somme de chaque voisin multiplié par la matrice de convolution. La matrice de convolution est un tableau de trois par trois qui, en fonction des valeurs qu'elle contient, va permettre de faire apparaitre ou flouter les contours des objets présents dans l'image. Pour l'exemple ci-dessus, on multiplie les valeurs de gris par le nombre présent dans la matrice de convolution à la même place puis on les ajoute ensemble, ce qui donne : `1 * 170 + 1 * 170 + 1 * 119 + 1 * 170 + 0 * 170 + 1 * 119 + 1 * 119 + 1 * 119 + 1 * 119`.
 
 Si cette nouvelle valeur est supérieure à `255` alors la nouvelle couleur du pixel est `255`, de même si la valeur est inférieure à `0` alors la nouvelle couleur du pixel est `0`. Il ne faudra pas oublier d'affecter cette valeur à tous les canaux.
 
