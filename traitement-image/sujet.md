@@ -171,6 +171,10 @@ L'accès à un pixel de la grille ce fait en utilisant `image[x][y]` où `x` cor
 
 Pour accéder à la composante rouge du pixel, il est necessire d'utiliser la troisième dimension : `image[x][y][0]` où `0` permet l'accès à la première couche du canal. L'accès à la composante verte se fait avec `image[x][y][1]` et l'accès à la composante bleue avec `image[x][y][2]`.
 
+<p align="center">
+  <img width="450" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/grille3Dpixels.png">
+</p>
+
 ### 3.3 Filtre de couleur
 
 Un filtre de couleur permet de ne voir qu'un canal précis de l'image, les autres canaux de l'image sont rempli avec des `0`. Voici le sous-algorithme permettant, à partir d'une image, de ne filtrer que le rouge.
@@ -210,9 +214,9 @@ Ecrire un sous-algorithme qui à pour paramètre d'entrée une image et qui reto
 **Exemple**
 
 <p align="center">
-  <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/original.jpg">
+  <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice2q2.jpg">
 </p>
 
-<p align="center">
-  <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/symetrie.jpg">
-</p>
+### 3.5 Niveaux de gris et version noir/blanc
+
+Il existe différentes filtres qui permet d'obtenir 
