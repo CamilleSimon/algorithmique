@@ -148,17 +148,23 @@ En combinant les valeurs de rouge, vert et bleu de chaque pixel, on obtient la c
 Comme pour les autres types de tableaux, on peut déclarer les images de deux façons :
 
 ```
-picture[10][5][3]
+image[10][5][3]
 ```
 
 ```
-picture[][][]
+image[][][]
 ```
 
 Dans le deuxième cas, la déclaration de la taille des tableaux dans les instructions se fait ainsi :
 ```
-picture[][][] ← picture[10][5][3]
+image[][][] ← image[10][5][3]
 ```
 
 ### 3.2. Accès aux informations de l'image
 
+L'accès à un pixel de la grille ce fait en utilisant `image[x][y]` où `x` correspond à l'index de colonne et `y` à l'index des lignes. 
+`image[x][y]` est un tableau de trois cases.
+
+<p align="center">
+  <img width="450" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/pixel0-0.png">
+</p>
