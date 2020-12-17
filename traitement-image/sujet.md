@@ -175,7 +175,7 @@ Pour accéder à la composante rouge du pixel, il est necessire d'utiliser la tr
   <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/grille3Dpixels.png">
 </p>
 
-### 3.3 Filtre de couleur
+### 3.3. Filtre de couleur
 
 Un filtre de couleur permet de ne voir qu'un canal précis de l'image, les autres canaux de l'image sont rempli avec des `0`. Voici le sous-algorithme permettant, à partir d'une image, de ne filtrer que le rouge.
 
@@ -201,7 +201,7 @@ Instructions
     FinPour
 ```
 
-### 3.4 Exercice 2
+### 3.4. Exercice 2
 
 #### Question 1 - Filtre bleu et vert
 
@@ -235,7 +235,7 @@ Pour obtenir le niveau de gris d'un pixel coloré, on fait la moyenne de ses com
   <img width="1000" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/conversion-niveaux-gris.png">
 </p>
 
-### 3.6 Exercice 3
+### 3.6. Exercice 3
 
 #### Question 1 - Niveau de gris
 
@@ -257,7 +257,7 @@ Pour obtenir le niveau de gris d'un pixel coloré, on fait la moyenne de ses com
   <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice2q4.jpg">
 </p>
 
-### 3.7 Modification de contours
+### 3.7. Modification de contours
 
 On entre dans la partie la plus difficile de ce devoir maison. Pour effectuer les traitements suivants, il est nécessaire de travailler à partir d'une image en niveaux de gris.
 
@@ -272,7 +272,7 @@ La nouvelle couleur du pixel central est la somme de chaque voisin multiplié pa
 
 Si cette nouvelle valeur est supérieure à `255` alors la nouvelle couleur du pixel est `255`, de même si la valeur est inférieure à `0` alors la nouvelle couleur du pixel est `0`. Il ne faudra pas oublier d'affecter cette valeur à tous les canaux.
 
-### 3.8 Exercice 4
+### 3.8. Exercice 4
 
 Écrire un sous-algorithme qui a pour paramètres d'entrée une image ainsi qu'une matrice de convolution et qui retourne la nouvelle d'image après application de la matrice. Vous veillerez à effectuer toutes les vérifications nécessaires et traiterez les exceptions comme vous le souhaitez.
 
@@ -282,7 +282,7 @@ Si cette nouvelle valeur est supérieure à `255` alors la nouvelle couleur du p
   <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice4.jpg">
 </p>
 
-### 3.9 Pixellisation d'une image
+### 3.9. Pixellisation d'une image
 
 Le but de ce traitement est de diviser une image en carré de `n` pixels de côté. On effectue ensuite la moyenne de chacun des canaux des `n²` pixels pour obtenir l'image pixellisée.
 
@@ -292,7 +292,7 @@ Ici, la seul pixellisation possible est avec des carrés de 5 cases.
   <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/pixellisation.png">
 </p>
 
-### 3.10 Exercice 5
+### 3.10. Exercice 5
 
 Écrire un sous-algorithme qui a pour paramètres d'entrée une image et qui retourne l'ensemble des pixellisations possibles. Vous veillerez à effectuer toutes les vérifications nécessaires et traiterez les exceptions comme vous le souhaitez.
 
