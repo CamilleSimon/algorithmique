@@ -90,7 +90,7 @@ Le contenu de la case de coordonnée (`6`,`0`) est changé à `0`.
 Généralisons l'accès d'une case à l'ensemble du tableau. L'exemple d'algorithme ci-dessous rempli la grille de case noire.
 
 ```
-Algorithme Colorier en noir
+Algorithme ColorierEnNoir
 Variable
     grille[10][5] : grille d'entiers
 Instructions
