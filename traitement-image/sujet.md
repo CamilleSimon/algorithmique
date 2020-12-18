@@ -116,13 +116,14 @@ lignes ← Longueur(grille[0])
 
 ### 2.4. Exercice 1
 
+#### Question 1
+
 Voici une représentation de Mr Monopoly :
 
 <p align="center">
   <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/mr-monopoly.png">
 </p>
 
-#### Question 1
 
 * Quelle est la couleur de la case de coordonnées (`8`,`13`) ?
 * Quelle est la couleur de la case de coordonnées (`13`,`8`) ?
