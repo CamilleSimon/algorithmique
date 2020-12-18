@@ -124,7 +124,6 @@ Voici une représentation de Mr Monopoly :
   <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/mr-monopoly.png">
 </p>
 
-
 * Quelle est la couleur de la case de coordonnées (`8`,`13`) ?
 * Quelle est la couleur de la case de coordonnées (`13`,`8`) ?
 
