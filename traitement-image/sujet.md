@@ -131,7 +131,7 @@ Voici une représentation de Mr Monopoly :
 
 #### Question 2
 
-Ecrire un sous-algorithme nommé `nombreCasesCouleur` qui prend en entrée une grille et affiche combien il y a de cases noires et de cases blanches dans cette grille.
+Ecrire un sous-algorithme nommé `NombreCasesCouleur` qui prend en entrée une grille et affiche combien il y a de cases noires et de cases blanches dans cette grille.
 
 #### Question 3
 
