@@ -53,7 +53,7 @@ La première lorsque l'on connait déjà la taille de la grille :
 grille[10][5] : tableau d'entiers
 ```
 
-Et la seconde lorsqu'il sagit d'une grille de taille non définie :
+La seconde lorsqu'il sagit d'une grille de taille non définie :
 
 ```
 grille[][] : tableau d'entiers
