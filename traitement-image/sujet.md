@@ -284,7 +284,7 @@ Si cette nouvelle valeur est supérieure à `255` alors la nouvelle couleur du p
 
 ### 3.8. Exercice 4
 
-Écrire un sous-algorithme qui a pour paramètres d'entrée une image ainsi qu'une matrice de convolution et qui retourne la nouvelle image après application de la matrice. Vous veillerez à effectuer toutes les vérifications nécessaires et traiterez les exceptions comme vous le souhaitez.
+Écrire un sous-algorithme qui a pour paramètres d'entrée une image ainsi qu'une matrice de convolution et qui retourne la nouvelle image après application de la matrice. Vous veillerez à appliquer la matrice de convolution à l'ensemble de l'image et traiterez les exceptions.
 
 **Exemple**
 
