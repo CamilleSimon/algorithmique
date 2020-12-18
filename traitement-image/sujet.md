@@ -73,7 +73,7 @@ Le contenu de la première paire de crochets correspond au nombre de colonnes de
 
 ### 2.2. Accès à une case de la grille
 
-L'accès à une case de la grille ce fait en utilisant `grille[x][y]` où `x` correspond à l'index de colonne et `y` à l'index des lignes. 
+L'accès à une case de la grille ce fait en utilisant `grille[x][y]` où `x` correspond à l'index des colonnes et `y` à l'index des lignes. 
 
 <p align="center">
   <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/grille2D-coordonnees.png">
