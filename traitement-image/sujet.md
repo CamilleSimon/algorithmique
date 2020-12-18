@@ -276,13 +276,11 @@ Voici un exemple :
 
 <p align="center">
   <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/calcul-contraste.png">
-</p>
+</p> 
 
- 
+On veut calculer la nouvelle couleur du pixel entouré en rouge. Les voisins de celui-ci sont entourés en vert. La nouvelle couleur du pixel central est la somme de chaque pixel multiplié par la matrice de convolution, ce qui donne : `1 * 170 + 1 * 170 + 1 * 119 + 1 * 170 + 0 * 170 + 1 * 119 + 1 * 119 + 1 * 119 + 1 * 119`.
 
-On veut calculer la nouvelle couleur du pixel entouré en rouge. Les voisins celui-ci sont entourés en vert. La nouvelle couleur du pixel central est la somme de chaque pixel multiplié par la matrice de convolution, ce qui donne : `1 * 170 + 1 * 170 + 1 * 119 + 1 * 170 + 0 * 170 + 1 * 119 + 1 * 119 + 1 * 119 + 1 * 119`.
-
-Si cette nouvelle valeur est supérieure à `255` alors la nouvelle couleur du pixel est `255`, de même si la valeur est inférieure à `0` alors la nouvelle couleur du pixel est `0`. Il ne faudra pas oublier d'affecter cette valeur à tous les canaux.
+Si cette nouvelle valeur est supérieure à `255` alors la nouvelle couleur du pixel est `255` (blanc), de même si la valeur est inférieure à `0` alors la nouvelle couleur du pixel est `0` (noir). Il ne faudra pas oublier d'affecter cette valeur à tous les canaux.
 
 ### 3.8. Exercice 4
 
