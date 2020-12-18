@@ -198,7 +198,7 @@ Instructions
     rouge[][][] ← rouge[colonnes][lignes][3] // La troisième dimension est obligatoire de taille 3, c'est la particularité des images
 
     Pour i de 0 à colonnes - 1 faire
-        Pour j de 0 à colonnes - 1 faire
+        Pour j de 0 à lignes - 1 faire
             rouge[i][j][0] ← image[i][j][0]
             rouge[i][j][1] ← 0
             rouge[i][j][2] ← 0
@@ -209,7 +209,7 @@ Instructions
 
 #### Question 1 - Filtre bleu et vert
 
-En utilisant le modèle ci-dessus, réaliser un sous-algorithme qui filtre le bleu et un sous-algorithme qui filtre le vert.
+En utilisant le modèle ci-dessus, écrire un sous-algorithme qui filtre le bleu et un sous-algorithme qui filtre le vert.
 
 **Exemple**
 
