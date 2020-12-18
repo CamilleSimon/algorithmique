@@ -148,7 +148,7 @@ Une image est un tableau à trois dimensions. Comme pour la section ci-dessus, l
 En combinant les valeurs de rouge, vert et bleu de chaque pixel, on obtient la couleur affiché à l'écran.
 
 <p align="center">
-  <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/addition-couleurs.png">
+  <img width="450" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/addition-couleurs.png">
 </p>
 
 ### 3.1. Déclaration d'une image
@@ -232,7 +232,7 @@ Ecrire un sous-algorithme qui à pour paramètre d'entrée une image et qui reto
   <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/exercice2q2.jpg">
 </p>
 
-### 3.5. Niveaux de gris et noir/blanc
+### 3.5. Niveau de gris et noir/blanc
 
 Pour obtenir le niveau de gris d'un pixel coloré, on fait la moyenne de ses composantes. Ce niveau de gris est ensuite affecté à l'ensemble des composantes du pixel.
 
@@ -248,7 +248,7 @@ Pour obtenir le niveau de gris d'un pixel coloré, on fait la moyenne de ses com
 
 #### Question 1 - Niveau de gris
 
-Écrire un sous-algorithme qui a pour paramètre d'entrée une image et qui retourne une nouvelle version en niveaux de gris.
+Écrire un sous-algorithme qui a pour paramètre d'entrée une image et qui retourne une nouvelle version en niveau de gris.
 
 **Exemple**
 
@@ -258,7 +258,7 @@ Pour obtenir le niveau de gris d'un pixel coloré, on fait la moyenne de ses com
 
 #### Question 2 - Noir et blanc
 
-Écrire un sous-algorithme qui a pour paramètres d'entrée une image en niveau de gris et un réel. Ce sous-algorithme retourne une nouvelle version de l'image en noir et blanc où tous les pixels plus petit que le seuil sont coloriés en noir et tous les pixels plus grand que le seuil sont colorés en blanc.
+Écrire un sous-algorithme qui a pour paramètres d'entrée une image en niveau de gris et un réel. Ce sous-algorithme retourne une nouvelle version de l'image en noir et blanc où tous les pixels plus petit que le réel sont coloriés en noir et tous les pixels plus grand que le réel sont coloriés en blanc.
 
 **Exemple**
 
@@ -268,7 +268,7 @@ Pour obtenir le niveau de gris d'un pixel coloré, on fait la moyenne de ses com
 
 ### 3.7. Modification de contours
 
-On entre dans la partie la plus difficile de ce devoir maison. Pour effectuer les traitements suivants, il est nécessaire de travailler à partir d'une image en niveaux de gris.
+On entre dans la partie la plus difficile de ce devoir maison. Pour effectuer les traitements suivants, il est nécessaire de travailler à partir d'une image en niveau de gris.
 
 La modification de contour se fait en augmentant ou en diminuant le contraste d'un pixel par rapport à ces voisins. Le "poids" des voisins dans le nouveau calcul de la couleur du pixel est donné par un tableau à deux dimensions appelé matrice de convolution. Voici un exemple :
 
