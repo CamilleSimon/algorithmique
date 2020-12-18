@@ -270,13 +270,13 @@ Pour obtenir le niveau de gris d'un pixel coloré, on fait la moyenne de ses com
 
 Pour effectuer les traitements suivants, il est nécessaire de travailler à partir d'une image en niveau de gris.
 
-La modification de contour se fait en augmentant ou en diminuant le contraste d'un pixel par rapport à ces voisins. Le "poids" des voisins dans le nouveau calcul de la couleur du pixel est donné par un tableau à deux dimensions appelé matrice de convolution. Voici un exemple :
+La modification de contour se fait en augmentant ou en diminuant le contraste d'un pixel par rapport à ces voisins. Le "poids" des voisins dans le nouveau calcul de la couleur du pixel est donné par un tableau à deux dimensions appelé matrice de convolution. La matrice de convolution est un tableau de trois par trois qui, en fonction des valeurs qu'elle contient, va permettre de faire apparaitre ou flouter les contours des objets présents dans l'image. Voici un exemple :
 
 <p align="center">
   <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/calcul-contraste.png">
 </p>
 
-La matrice de convolution est un tableau de trois par trois qui, en fonction des valeurs qu'elle contient, va permettre de faire apparaitre ou flouter les contours des objets présents dans l'image. 
+ 
 
 On veut calculer la nouvelle couleur du pixel entouré en rouge. Les voisins de ce pixel sont entourés en vert. La nouvelle couleur du pixel central est la somme de chaque voisin multiplié par la matrice de convolution, ce qui donne : `1 * 170 + 1 * 170 + 1 * 119 + 1 * 170 + 0 * 170 + 1 * 119 + 1 * 119 + 1 * 119 + 1 * 119`.
 
