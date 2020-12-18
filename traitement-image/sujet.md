@@ -148,7 +148,7 @@ Une image est un tableau à trois dimensions. Comme pour la section ci-dessus, l
 En combinant les valeurs de rouge, vert et bleu de chaque pixel, on obtient la couleur affiché à l'écran.
 
 <p align="center">
-  <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/addition-couleurs.jpg">
+  <img width="800" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/addition-couleurs.png">
 </p>
 
 ### 3.1. Déclaration d'une image
