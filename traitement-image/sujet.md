@@ -107,7 +107,7 @@ Instructions
 
 Il faut utiliser deux boucles : une pour se déplacer sur l'axe horizontal et une autre pour se déplacer sur l'axe vertical. La boucle avec l'itérateur `i` parcours les colonnes de la grille et la boucle avec l'itérateur `j` parcours les lignes de la grille.
 
-Lorque l'on dispose d'une grille dont on ignore les dimensions, on peut les récupérer à l'aide de la fonction `Longueur`. En utilisant directement la variable en paramètre, on obtient la taille de la première dimension, soit le nombre de colonne. En utilisant la variable suivie d'un index de colonne valide, on obtient la taille de la deuxième dimension soit le nombre de ligne de cette colonne. Exemple :
+Lorque l'on dispose d'une grille dont on ignore les dimensions, on peut les récupérer à l'aide de la fonction `Longueur()`. En utilisant directement la variable en paramètre, on obtient la taille de la première dimension, soit le nombre de colonnes. En utilisant la variable suivie d'un index de colonne valide, on obtient la taille de la deuxième dimension soit le nombre de lignes de cette colonne. Exemple :
 
 ```
 colonnes ← Longueur(grille)
