@@ -202,6 +202,7 @@ Instructions
             rouge[i][j][0] ← image[i][j][0]
             rouge[i][j][1] ← 0
             rouge[i][j][2] ← 0
+        FinPour
     FinPour
 ```
 
