@@ -181,7 +181,7 @@ Pour accéder à la composante rouge du pixel, il est necessire d'utiliser la tr
 
 ### 3.3. Filtre de couleur
 
-Un filtre de couleur permet de ne voir qu'un canal précis de l'image, les autres canaux de l'image sont rempli avec des `0`. Voici le sous-algorithme permettant, à partir d'une image, de ne filtrer que le rouge.
+Un filtre de couleur permet de voir un canal précis, les autres canaux de l'image sont rempli avec des `0`. Voici le sous-algorithme permettant, à partir d'une image, de ne filtrer que le rouge.
 
 ```
 Sous-algorithme FiltreRouge
