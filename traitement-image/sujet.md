@@ -65,7 +65,7 @@ L'affectation de la taille de la grille dans les instructions se fait ainsi :
 grille[][] ← grille[10][5] 
 ```
 
-Le contenu de la première paire de crochet correspond aux nombre de colonnes de la grille et le contenu de la deuxième paire de crochet correspond au nombre de ligne de la grille.
+Le contenu de la première paire de crochets correspond au nombre de colonnes de la grille et le contenu de la deuxième paire de crochets correspond au nombre de lignes de la grille.
 
 <p align="center">
   <img width="460" src="https://github.com/CamilleSimon/algorithmique/blob/main/traitement-image/grille2D.png">
