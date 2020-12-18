@@ -45,11 +45,15 @@ Commençons par une version plus simple de la manipulation d'image. Dans cette s
 
 ### 2.1. Déclaration de la grille
 
-Dans la section variables, la déclaration d'une grille peut se faire de deux façons. La première lorsque l'on connait déjà la taille de la grille et la seconde lorsqu'elle sera transmise dans les instructions :
+Dans la section variables, la déclaration d'une grille peut se faire de deux façons. 
+
+La première lorsque l'on connait déjà la taille de la grille :
 
 ```
 grille[10][5] : tableau d'entiers
 ```
+
+Et la seconde lorsqu'il sagit d'une grille de taille non définie :
 
 ```
 grille[][] : tableau d'entiers
