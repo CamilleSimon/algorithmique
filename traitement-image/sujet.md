@@ -135,7 +135,7 @@ Ecrire un sous-algorithme nommé `NombreCasesCouleur` qui prend en entrée une g
 
 #### Question 3
 
-Ecrire un sous-algorithme intitulé `Inverse` qui prend en entrée une grille et retourne une grille dont les couleurs ont été inversées. C'est-à-dire que les cases noires sont coloriées en blancs et les cases blanches sont coloriées en noir.
+Ecrire un sous-algorithme intitulé `Inverse` qui prend en entrée une grille et retourne une grille dont les couleurs ont été inversées. C'est-à-dire que les cases noires sont coloriées en blanc et les cases blanches sont coloriées en noir.
 
 ## 3. Structure d'une image
 
