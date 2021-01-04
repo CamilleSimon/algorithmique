@@ -7,7 +7,7 @@ Le chiffrement de César est un procédé cryptographique qui permet de coder un
 
 Pour chiffrer un message, chaque lettre est remplacée par la nième lettre qui la suit dans l'alphabet. Par exemple pour une clé de 6 : `a` devient `g`, `b` devient `h`, `c` devient `i` et ainsi de suite jusqu'à `z` qui devient `f`.
 
-![Illustration chiffrement de César](https://github.com/CamilleSimon/algorithmique/blob/main/evaluations/letters-wheel.png))]
+![Illustration chiffrement de César](https://github.com/CamilleSimon/algorithmique/blob/main/evaluations/letters-wheel.png)
 
 Le message `bonjour` avec une clé de `6` devient alors le message chiffré : `hurpuax`
 
