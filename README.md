@@ -42,7 +42,7 @@ Cours et exercices à destination des étudiants du [Bachelor Métiers du numér
         * [Correction exercice 30](https://github.com/CamilleSimon/algorithmique/blob/main/exercices-seance2/boucles/exercice30.md)
         * [Correction exercice 31](https://github.com/CamilleSimon/algorithmique/blob/main/exercices-seance2/boucles/exercice31.md)
 * [Séance 3 - Algorithmes simples](https://github.com/CamilleSimon/algorithmique/blob/main/cours/Algorithmique-Seance3.pdf)
-* [Séance 4 - Les sctructures de données](https://github.com/CamilleSimon/algorithmique/blob/main/cours/Algorithmique-Seance4.pdf)
+* [Séance 4 - Les structures de données](https://github.com/CamilleSimon/algorithmique/blob/main/cours/Algorithmique-Seance4.pdf)
     * Les tableaux
         * [Correction exercice 1](https://github.com/CamilleSimon/algorithmique/blob/main/exercices-seance4/tableau/exercice1.md)
         * [Correction exercice 2](https://github.com/CamilleSimon/algorithmique/blob/main/exercices-seance4/tableau/exercice2.md)
@@ -52,4 +52,5 @@ Cours et exercices à destination des étudiants du [Bachelor Métiers du numér
         * [Correction exercice 6](https://github.com/CamilleSimon/algorithmique/blob/main/exercices-seance4/tableau/exercice6.md)
     * Les chaînes de caractères
         * [Correction exercice 7](https://github.com/CamilleSimon/algorithmique/blob/main/exercices-seance4/chaine-de-caracteres/exercice7.md)
-* [Séance 5 - Sous-algorithme et fonction](https://github.com/CamilleSimon/algorithmique/blob/main/cours/Algorithmique-Seance5.pdf)
+* [Séance 5 - Sous-algorithmes et fonctions](https://github.com/CamilleSimon/algorithmique/blob/main/cours/Algorithmique-Seance5.pdf)
+* [Séance 6 - Algorithmes de tri et complexité](https://github.com/CamilleSimon/algorithmique/blob/main/cours/Algorithmique-Seance6.pdf)
